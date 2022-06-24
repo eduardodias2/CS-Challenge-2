@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to our website!</h1>
+        <p>Create an account for free!</p>
+      </header>
+      <form action="/index.html">
+        <div class="inputs">
+          <img src="./svgs/userimage.svg" alt="username" />
+          <input type="text" id="user-name" placeholder="Insert your Name" />
+        </div>
+        <div class="inputs">
+          <img src="./svgs/email.svg" alt="email" />
+          <input type="email" id="user-email" placeholder="Insert your Email" />
+        </div>
+        <div class="inputs">
+          <img src="./svgs/password.svg" alt="password" />
+          <input
+            type="password"
+            id="user-password"
+            placeholder="Choose a Password"
+          />
+        </div>
+        <button class="submit">Send</button>
+      </form>
+      <p class="all-users"></p>
+    </div>
+  </body>
+</html>
