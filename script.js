@@ -3,6 +3,10 @@ let email = document.querySelector("#user-email");
 let password = document.querySelector("#user-password");
 let submit = document.querySelector(".submit");
 let user_count = 1;
+let imageMode = document.querySelector(".image-mode");
+let moon = document.querySelector(".image-mode svg:nth-child(2)");
+let sun = document.querySelector(".image-mode svg:nth-child(1)");
+
 document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
   if (username.value == "" || email.value == "" || password.value == "") {
@@ -24,4 +28,12 @@ document.querySelector("form").addEventListener("submit", function (event) {
     `);
   }
   user_count = user_count + 1;
+});
+
+document.querySelector(".button").addEventListener("click", () => {
+  document.querySelector(".button").classList.toggle("moon");
+  moon.classList.toggle("show");
+  sun.classList.toggle("hidden");
+  imageMode.classList.toggle("on");
+  document.body.classList.toggle("dark-mode");
 });
